@@ -1,8 +1,0 @@
-exchanges {
-  request_sequence {
-  }
-  response_sequence {
-    frames {
-    }
-  }
-}
