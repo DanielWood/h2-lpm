@@ -1,0 +1,258 @@
+exchanges {
+  request_sequence {
+    frames {
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 15663105
+      }
+    }
+    frames {
+      headers_frame {
+        pad_length: 0
+        exclusive: true
+        stream_dependency: 0
+        weight: 146
+        header_list {
+          name {
+            data: ":method"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "GET"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":authority"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "t.co"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":scheme"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "https"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":path"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "/i/adsct?type=javascript&version=2.0.4&p_id=Twitter&p_user_id=0&txn_id=o0f51&events=%5B%5B%22pageview%22%2Cnull%5D%5D&tw_sale_amount=0&tw_order_quantity=0&tw_iframe_status=0&event_id=dc569306-d9c9-440a-a193-b742636a8236&tw_document_href=https%3A%2F%2Fwww.udemy.com%2F"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-ch-ua"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\""
+            force_literal: true
+            huffman: true
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-ch-ua"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "?0"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "user-agent"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-ch-ua-platform"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "\"Linux\""
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "accept"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "sec-ch-ua"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-site"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "cross-site"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-mode"
+            force_literal: true
+            huffman: true
+          }
+          value {
+            data: "no-cors"
+            force_literal: false
+            huffman: true
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "/v4/fullHashes:find?$req=ChwKDGdvb2dsZWNocm9tZRIMOTguMC40NzU4LjgwEhsKDQgHEAYYASIDMDAxMAEQz94KGgIYB6hHxFcSGwoNCAUQBhgBIgMwMDEwARCJvQ0aAhgHbuJF0RIbCg0IARAGGAEiAzAwMTABEMWoChoCGAf55w00EhkKDQgKEAgYASIDMDAxMAEQBxoCGAfL8t2CEhoKDQgBEAgYASIDMDAxMAQQuyYaAhgHHrfMABIaCg0IDxAGGAEiAzAwMTABEPZwGgIYB0ay1dESGgoNCAgQBhgBIgMwMDEwARDSDhoCGAfJBpkAEhsKDQgNEAYYASIDMDAxMAEQ_rABGgIYB0TeenYSGQoNCAkQBhgBIgMwMDEwARAgGgIYByEc83oSGwoNCAMQBhgBIgMwMDEwARD36AkaAhgHs_unexIbCg0IDhAGGAEiAzAwMTABEIajBhoCGAfENgdJEhkKDQgBEAYYASIDMDAxMAMQFBoCGAcxsclIEhoKDQgQEAYYASIDMDAxMAEQrBAaAhgHxZwIsxosCAEIAwgFCAYIBwgICAkICggNCA4IDwgQCBEQAhAIGgYKBO8ARIsgASADIAQ=&$ct=application/x-protobuf&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "safebrowsing.googleapis.com"
+            force_literal: true
+            huffman: true
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-site"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "https://www.udemy.com/"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "accept-encoding"
+            force_literal: false
+            huffman: true
+          }
+          value {
+            data: "gzip, deflate, br"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "accept-language"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "en-US,en;q=0.9"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "muc_ads=7ccd483f-6517-4ef2-ade5-ab830a3d1904"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_stream: true
+        end_headers: true
+        priority: true
+        stream_id: 1
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        enable_push: true
+        ack: true
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 983041
+      }
+    }
+    frames {
+    }
+    frames {
+    }
+  }
+}

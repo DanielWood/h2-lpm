@@ -1,0 +1,229 @@
+exchanges {
+  request_sequence {
+    frames {
+      settings_frame {
+        header_table_size: 65536
+        max_concurrent_streams: 1000
+        initial_window_size: 6291456
+        max_header_list_size: 262144
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 15663105
+      }
+    }
+    frames {
+    }
+    frames {
+      settings_frame {
+        max_concurrent_streams: 65536
+        ack: true
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        header_table_size: 4096
+        max_concurrent_streams: 100
+        initial_window_size: 65536
+        max_frame_size: 16384
+        max_header_list_size: 81920
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 20905985
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 10420224
+      }
+    }
+    frames {
+      headers_frame {
+        pad_length: 0
+        exclusive: false
+        stream_dependency: 0
+        weight: 0
+        header_list {
+          name {
+            data: ":status"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "200"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "content-type"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "image/gif"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "date"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "Sat, 12 Mar 2022 01:04:25 GMT"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "expires"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "Sat, 12 Mar 2022 01:04:25 GMT"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "last-modified"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "Fri, 21 Dec 2012 00:00:01 GMT"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "cache-control"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "no-cache, must-revalidate, max-age=0"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "set-cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "fr=0qvtDUsfWWtXWG3ay..BhEvAw..GE5.1.0.BiK_GZ.; expires=Friday, 10-Jun-2022 01:04:25 GMT; path=/; domain=.facebook.com; SameSite=None; HttpOnly; secure"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "strict-transport-security"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "max-age=31536000; includeSubDomains"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cross-origin-resource-policy"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "cross-origin"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "content-length"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "44"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "server"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "proxygen-bolt"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "alt-svc"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_stream: false
+        end_headers: true
+        priority: false
+        stream_id: 1
+      }
+    }
+    frames {
+      data_frame {
+        pad_length: 0
+        data: "GIF89a\001\000\001\000\200\000\000\000\000\000\000\000\000!\371\004\001\000\000\000\000,\000\000\000\000\001\000\001\000\000\002\002D\001\000;\n"
+        end_stream: true
+        stream_id: 1
+      }
+    }
+  }
+}

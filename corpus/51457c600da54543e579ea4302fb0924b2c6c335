@@ -1,0 +1,19 @@
+exchanges {
+  request_sequence {
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      data_frame {
+        pad_length: 135
+        data: "no-cors"
+        end_stream: false
+        stream_id: 1
+      }
+    }
+  }
+}

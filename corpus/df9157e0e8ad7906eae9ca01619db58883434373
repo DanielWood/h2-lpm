@@ -1,0 +1,255 @@
+exchanges {
+  request_sequence {
+    frames {
+      continuation_frame {
+        header_list {
+          name {
+            data: "accept-language"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "en-US,\377\377\377\377\377\377\377\377"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_headers: true
+        stream_id: 0
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        header_table_size: 4096
+        max_concurrent_streams: 100
+        initial_window_size: 65536
+        ack: false
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 983041
+      }
+    }
+    frames {
+      headers_frame {
+        pad_length: 0
+        exclusive: false
+        stream_dependency: 0
+        weight: 0
+        header_list {
+          name {
+            data: ":status"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "200"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "date"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "Sat, 12 Mar 2022 01:04:24 GMT"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "server"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "tsa_l"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "content-type"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "image/gif;charset=utf-8"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cache-control"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "no-cache, no-store, max-age=0"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "content-length"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "43"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "strict-transport-security"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "max-age=0"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "x-response-time"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "146"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "x-connection-hash"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "4d4b94f0997179921353171afe4460dca73260eeaef66d47613ce4e5441bbdd0"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_stream: false
+        end_headers: true
+        priority: false
+        stream_id: 1
+      }
+    }
+    frames {
+      data_frame {
+        pad_length: 0
+        data: "GIF89a\001\000\001\000\200\000\000\377\377\377\000\000\000!\371\004\t\000\000\001\000,\000\000\000\000\001\000\001\000\000\002\002L\001\000;"
+        end_stream: true
+        stream_id: 1
+      }
+    }
+  }
+}
+exchanges {
+  request_sequence {
+    frames {
+      headers_frame {
+        exclusive: false
+        stream_dependency: 0
+        weight: 0
+        header_list {
+          name {
+            data: ""
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: ""
+            force_literal: false
+            huffman: false
+          }
+          indexing: NEVER_INDEXED
+        }
+        header_list {
+          name {
+            data: ""
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: ""
+            force_literal: false
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: ""
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: ""
+            force_literal: false
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        end_stream: false
+        end_headers: true
+        priority: false
+        stream_id: 0
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      continuation_frame {
+        header_list {
+          name {
+            data: ":method"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "en-US,en;q=0.9"
+            force_literal: false
+            huffman: true
+          }
+          indexing: INCREMENTAL
+        }
+        end_headers: true
+        stream_id: 0
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+exchanges {
+  request_sequence {
+    frames {
+      settings_frame {
+        max_concurrent_streams: 100
+        initial_window_size: 1048576
+        max_header_list_size: 65536
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 8
+      }
+    }
+    frames {
+    }
+    frames {
+      push_promise_frame {
+        promised_stream_id: 0
+        header_list {
+          name {
+            data: "\001\000\000\000\000\000\000\021"
+            force_literal: false
+            huffman: true
+          }
+          value {
+            data: ""
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_headers: false
+        stream_id: 0
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        max_concurrent_streams: 100
+        initial_window_size: 1048576
+        max_header_list_size: 0
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 0
+      }
+    }
+  }
+}

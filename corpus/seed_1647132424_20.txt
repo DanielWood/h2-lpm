@@ -1,0 +1,478 @@
+exchanges {
+  request_sequence {
+    frames {
+      settings_frame {
+        header_table_size: 65536
+        max_concurrent_streams: 1000
+        initial_window_size: 6291456
+        max_header_list_size: 262144
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 15663105
+      }
+    }
+    frames {
+      headers_frame {
+        pad_length: 0
+        exclusive: true
+        stream_dependency: 0
+        weight: 146
+        header_list {
+          name {
+            data: ":method"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "GET"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":authority"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "pixel.pointmediatracker.com"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":scheme"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "https"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":path"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "/kpi?c=udemy&tag_id=288&user_id=00efeb8f44754d76987a170a06a92afc&kpi=visit&fpc=d7edd46c-217b-4691-a34f-18c2f373a8a6&gtmcb=461904624"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "sec-ch-ua"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\""
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-ch-ua-mobile"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "?0"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "user-agent"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-ch-ua-platform"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "\"Linux\""
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "accept"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-site"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "cross-site"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-mode"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "no-cors"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-dest"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "image"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "referer"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "https://www.udemy.com/"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "accept-encoding"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "gzip, deflate, br"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "accept-language"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "en-US,en;q=0.9"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "c=03677873-bd9b-4261-9176-e62170d280e8"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_stream: true
+        end_headers: true
+        priority: true
+        stream_id: 1
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        max_concurrent_streams: 128
+        initial_window_size: 65536
+        max_frame_size: 16777215
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 2147418112
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+    frames {
+      headers_frame {
+        pad_length: 0
+        exclusive: false
+        stream_dependency: 0
+        weight: 0
+        header_list {
+          name {
+            data: ":status"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "302"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "content-type"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "application/json"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "content-length"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "2"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "location"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "https://cnv.event.prod.bidr.io/log/cnv?tag_id=288&buzz_key=blisspoint&value=udemy&segment_key=&order=b4691413-1d3a-41fb-aaec-d3c910769f0d.00efeb8f44754d76987a170a06a92afc&ord=3828722752634344725"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "date"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "Sat, 12 Mar 2022 01:04:25 GMT"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "x-amzn-requestid"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "0e085b77-ecd5-4539-a9c7-ad23984da5c7"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "access-control-allow-origin"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "*"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "strict-transport-security"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "max-age=63072000; includeSubDomains; preload"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "set-cookie"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "c=03677873-bd9b-4261-9176-e62170d280e8; domain=.pointmediatracker.com; expires=Sun, 12-Mar-2023 01:04:25 GMT; path=/; secure; SameSite=None"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "x-amz-apigw-id"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "O2KwAEBLvHcFiEw="
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "x-amzn-trace-id"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "Root=1-622bf199-39279b5b62d7114a47e5ed91;Sampled=0"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "x-cache"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "Miss from cloudfront"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "via"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "1.1 b3d6b614ba45dfb217beafb39afef764.cloudfront.net (CloudFront)"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "x-amz-cf-pop"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "AKL50-C1"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "x-amz-cf-id"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "nSgvTQ1WiSV8RcSMPQB7cDmIUvPianYH-FXBb9HxWvUKNmBlPCfIVQ=="
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        end_stream: false
+        end_headers: true
+        priority: false
+        stream_id: 1
+      }
+    }
+    frames {
+      data_frame {
+        pad_length: 0
+        data: "{}"
+        end_stream: false
+        stream_id: 1
+      }
+    }
+  }
+}

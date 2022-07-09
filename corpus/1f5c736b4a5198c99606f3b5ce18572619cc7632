@@ -1,0 +1,34 @@
+exchanges {
+  request_sequence {
+    frames {
+    }
+  }
+  response_sequence {
+  }
+}
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+    frames {
+      push_promise_frame {
+        promised_stream_id: 0
+        header_list {
+          name {
+            data: "iframe"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: ""
+            force_literal: true
+            huffman: false
+          }
+          indexing: NEVER_INDEXED
+        }
+        end_headers: true
+        stream_id: 0
+      }
+    }
+  }
+}

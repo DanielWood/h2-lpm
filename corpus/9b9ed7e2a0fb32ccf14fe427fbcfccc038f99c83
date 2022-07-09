@@ -1,0 +1,299 @@
+exchanges {
+  request_sequence {
+    frames {
+      goaway_frame {
+        last_stream_id: 7890176
+        error_code: 0
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 15663105
+      }
+    }
+    frames {
+      headers_frame {
+        pad_length: 0
+        exclusive: true
+        stream_dependency: 0
+        weight: 255
+        header_list {
+          name {
+            data: "sec-fetch-site"
+            force_literal: false
+            huffman: true
+          }
+          value {
+            data: "GET"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":authority"
+            force_literal: false
+            huffman: true
+          }
+          value {
+            data: "pixel.tapad.coe=javascript&version=2.0.4&p_id=Twitter&p_user_id=0&txn_id=o0f51&events=%5B%5B%22pageview%22%2Cnull%5D%5D&tw_sale_amount=0&tw_order_quantity=0&tw_iframe_status=0&event_id=dc569306-d9c9-440a-a193-b742636a8236&tw_document_href=https%3A%2F%2Fwww.udemy.com%2F\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: WITHOUT_INDEX\n        }\n        header_list {\n          name {\n            data: \"sec-ch-ua\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"\\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Chromium\\\";v=\\\"98\\\", \\\"Google Chrome\\\";v=\\\"98\\\"\"\n            force_literal: true\n            huffman: true\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"sec-ch-ua\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"?0\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"user-agent\"\n            force_literal: false\n            huffman: false\n          }\n          value {\n            data: \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"sec-ch-ua-platform\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"\\\"Linux\\\"\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"accept\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"sec-ch-ua\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"sec-fetch-site\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"cross-site\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"sec-fetch-mode\"\n            force_literal: true\n            huffman: truem"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":scheme"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "https"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":path"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "/idsync/ex/push?partner_id=2884&partner_url=https%3A%2F%2Ftr.snapchat.com%2Fcm%2Fp%3Frand%3D1646874034259%26pnid%3D140%26pcid%3D%24%7BTA_DEVICE_ID%7D"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "upgrade-insecure-requests"
+            force_literal: true
+            huffman: true
+          }
+          value {
+            data: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "user-agent"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "Mozilla/5.0 (X11; Linux x86_64) App======leWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
+            force_literal: true
+            huffman: false
+          }
+          indexing: NEVER_INDEXED
+        }
+        header_list {
+          name {
+            data: "accept"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fceth-site"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "cross-site"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":path"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "navigate"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-dest"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "iframe"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-ch-ua"
+            force_literal: true
+            huffman: true
+          }
+          value {
+            data: "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\""
+            force_literal: true
+            huffman: true
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-ch-ua-mobile"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "?0"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-ch-ua-platform"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "\"Linux\""
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "referer"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "https://tr.snapchat.com/"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "accept-encoding"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "gzip, deflate, br"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "accept-language"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "en-US,en;q=0.9"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: true
+          }
+          value {
+            data: "TapAd_TS=1645078967167"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "TapAd_DID=1ece60f0-455b-4e5f-af06-8999109d0f88"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "TapAd_3WAY_SYNCS="
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_stream: true
+        end_headers: true
+        priority: true
+        stream_id: 1
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        max_concurrent_streams: 100
+        initial_window_size: 1048576
+        max_header_list_size: 65536
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 983041
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+  }
+}

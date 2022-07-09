@@ -1,0 +1,371 @@
+exchanges {
+  request_sequence {
+    frames {
+      settings_frame {
+        header_table_size: 65536
+        max_concurrent_streams: 1000
+        initial_window_size: 6291456
+        max_header_list_size: 262144
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 15663105
+      }
+    }
+    frames {
+      headers_frame {
+        pad_length: 0
+        exclusive: true
+        stream_dependency: 0
+        weight: 109
+        header_list {
+          name {
+            data: ":method"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "cache-akl10328-AKL"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":authority"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "safebrowsing.googleapis.com"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":scheme"
+            force_literal: false
+            huffman: true
+          }
+          value {
+            data: "https"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":path"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "/v4/fullHashes:find?$req=ChwKDGdvb2dsZWNocm9tZRIMOTguMC40NzU4LjgwEhsKDQgHEAYYASIDMDAxMAEQz94KGgIYB6hHxFcSGwoNCAUQBhgBIgMwMDEwARCJvQ0aAhgHbuJF0RIbCg0IARAGGAEiAzAwMTABEMWoChoCGAf55w00EhkKDQgKEAgYASIDMDAxMAEQBxoCGAfL8t2CEhoKDQgBEAgYASIDMDAxMAQQuyYaAhgHHrfMABIaCg0IDxAGGAEiAzAwMTABEPZwGgIYB0ay1dESGgoNCAgQBhgBIgMwMDEwARDSDhoCGAfJBpkAEhsKDQgNEAYYASIDMDAxMAEQ_rABGgIYB0TeenYSGQoNCAkQBhgBIgMwMDEwARAgGgIYByEc83oSGwoNCAMQBhgBIgMwMDEwARD36AkaAhgHs_unexIbCg0IDhAGGAEiAzAwMTABEIajBhoCGAfENgdJEhkKDQgBEAYYASIDMDAxMAMQFBoCGAcxsclIEhoKDQgQEAYYASIDMDAxMAEQrBAaAhgHxZwIsxosCAEIAwgFCAYIBwgICAkICggNCA4IDwgQCBEQAhAIGgYKBO8ARIsgASADIAQ=&$ct=application/x-protobuf&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "x-http-method-override"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "POST"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-site"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "none"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-modexchanges {\n  request_sequence {\n    frames {\n      settings_frame {\n        header_table_size: 65536\n        max_concurrent_streams: 1000\n        initial_window_size: 6291456\n        max_header_list_size: 262144\n        ack: false\n      }\n    }\n    frames {\n      push_promise_frame {\n        pad_length: 0\n        promised_stream_id: 0\n        end_headers: false\n        stream_id: 0\n      }\n    }\n    frames {\n      headers_frame {\n        pad_length: 0\n        exclusive: true\n        stream_dependency: 0\n        weight: 146\n        header_list {\n          name {\n            data: \":method\"\n            force_literal: false\n            huffman: false\n          }\n          value {\n            data: \"GET\"\n            force_literal: false\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \":authority\"\n            force_literal: false\n            huffman: false\n          }\n          value {\n            data: \"www.dwin1.com\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \":scheme\"\n            force_literal: false\n            huffman: false\n          }\n          value {\n            data: \"https\"\n            force_literal: false\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \":path\"\n            force_literal: false\n            huffman: false\n          }\n          value {\n            data: \"/6554.js\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: WITHOUT_INDEX\n        }\n        header_list {\n          name {\n            data: \"sec-ch-ua\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"\\\" Not A;Brand\\\";v=\\\"99\\\", \\\"Chromium\\\";v=\\\"98\\\", \\\"Google Chrome\\\";v=\\\"98\\\"\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"sec-ch-ua-mobile\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"?0\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"user-agent\"\n            force_literal: false\n            huffman: false\n          }\n          value {\n            data: \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"sec-ch-ua-platform\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"\\\"Linux\\\"\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"accept\"\n            force_literal: false\n            huffman: false\n          }\n          value {\n            data: \"*/*\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"sec-fetch-site\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"cross-site\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"sec-fetch-mode\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"no-cors\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"sec-fetch-dest\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"GET\"\n            force_literal: false\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \":method\"\n            force_literal: false\n            huffman: false\n          }\n          value {\n            data: \"https://www.udemy.com/\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"accept-encoding\"\n            force_literal: false\n            huffman: false\n          }\n          value {\n            data: \"gzip, deflate, br\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"accept-language\"\n            force_literal: false\n            huffman: false\n          }\n          value {\n            data: \"en-US,en;q=0.9\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"if-none-match\"\n            force_literal: false\n            huffman: false\n          }\n          value {\n            data: \"W/\\\"46983d17c187c844c157337ec017b8fc\\\"\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"if-modified-since\"\n            force_literal: false\n            huffman: false\n          }\n          value {\n            data: \"Thu, 10 Feb 2022 08:15:53 GMT\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        end_stream: true\n        end_headers: true\n        priority: true\n        stream_id: 1\n      }\n    }\n    frames {\n      settings_frame {\n        ack: true\n      }\n    }\n    frames {\n      rst_stream_frame {\n        error_code: 8\n        stream_id: 1\n      }\n    }\n  }\n  response_sequence {\n    frames {\n      settings_frame {\n        max_concurrent_streams: 128\n        initial_window_size: 65536\n        max_frame_size: 16777215\n        ack: false\n      }\n    }\n    frames {\n      priority_frame {\n        exclusive: false\n        stream_dependency: 0\n        weight: 0\n        stream_id: 65536\n      }\n    }\n    frames {\n      settings_frame {\n        ack: true\n      }\n    }\n    frames {\n      headers_frame {\n        pad_length: 0\n        exclusive: false\n        stream_dependency: 0\n        weight: 0\n        header_list {\n          name {\n            data: \":status\"\n            force_literal: false\n            huffman: false\n          }\n    e      value {\n            data: \"304\"\n            force_literal: false\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"access-control-allow-origin\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"*\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: WITHOUT_INDEX\n        }\n        header_list {\n          name {\n            data: \"access-control-allow-methods\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"GET, HEAD\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: WITHOUT_INDEX\n        }\n        header_list {\n          name {\n            data: \"x-amz-replication-status\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"COMPLETED\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: WITHOUT_INDEX\n        }\n        header_list {\n          name {\n            data: \"last-modified\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"Thu, 24 Feb 2022 12:54:35 GMT\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: WITHOUT_INDEX\n        }\n        header_list {\n          name {\n            data: \"x-amz-version-id\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"5zaEGcAI_3GACYbCO_fmxsIkRHKj69QQ\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: WITHOUT_INDEX\n        }\n        header_list {\n          name {\n            data: \"server\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"AmazonS3\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: WITHOUT_INDEX\n        }\n        header_list {\n          name {\n            data: \"date\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"Sat, 12 Mar 2022 00:55:56 GMT\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: WITHOUT_INDEX\n        }\n        header_list {\n          name {\n            data: \"cache-control\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"max-age=600, s-maxage=600\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: INCREMENTAL\n        }\n        header_list {\n          name {\n            data: \"etag\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"W/\\\"46983d17c187c844c157337ec017b8fc\\\"\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: WITHOUT_INDEX\n        }\n        header_list {\n          name {\n            data: \"vary\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"Accept-Encoding\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: WITHOUT_INDEX\n        }\n        header_list {\n          name {\n            data: \"x-cache\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"Hit from cloudfront\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: WITHOUT_INDEX\n        }\n        header_list {\n          name {\n            data: \"via\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"1.1 45159723ae64482c512acf77238ad238.cloudfront.net (CloudFront)\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: WITHOUT_INDEX\n        }\n        header_list {\n          name {\n            data: \"x-amz-cf-pop\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"AKL50-C2\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: WITHOUT_INDEX\n        }\n        header_list {\n          name {\n            data: \"x-amz-cf-id\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"RnBH0_GzikeX3gNsPAgaHb-IWZJOywYDbRroksXyU4u-X1t3D0YbsA==\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: WITHOUT_INDEX\n        }\n        header_list {\n          name {\n            data: \"age\"\n            force_literal: true\n            huffman: false\n          }\n          value {\n            data: \"510\"\n            force_literal: true\n            huffman: false\n          }\n          indexing: WITHOUT_INDEX\n        }\n        end_stream: true\n        end_headers: true\n        priority: false\n        stream_id: 1\n      }\n    }\n  }\n}\n"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "no-cors"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-dest"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "empty"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "user-agent"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "accept-encoding"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "gzip, deflate, br"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_stream: true
+        end_headers: true
+        priority: true
+        stream_id: 1
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+    frames {
+      ping_frame {
+        opaque_data_lo: 0
+        opaque_data_hi: 0
+        ack: true
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        header_table_size: 1
+        max_concurrent_streams: 100
+        initial_window_size: 1048576
+        max_header_list_size: 65536
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 983041
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+    frames {
+      headers_frame {
+        pad_length: 0
+        exclusive: false
+        stream_dependency: 0
+        weight: 15990784
+        header_list {
+          name {
+            data: ":status"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "200"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "content-type"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "application/x-protobuf"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "content-disposition"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "attachment"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "content-encoding"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "gzip"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "date"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "Sat, 12 Mar 2022 01:04:21 GMT"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "cache-control"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "private"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "content-length"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "82"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "x-xss-protection"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "0"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "x-frame-options"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "SAMEORIGIN"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "x-content-type-options"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "nosniff"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "alt-svc"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_stream: false
+        end_headers: true
+        priority: false
+        stream_id: 1
+      }
+    }
+    frames {
+      data_frame {
+        pad_length: 238
+        data: "\037\213\010\000\000\000\000\000\002\377\3432\344`\025`\222R\342Rx\317\340\322\275\276\353^\364K]\275\345;\371\253\373\226.](n\321\271p\356\235\353\017.;=8\234\240\304\240\305\314\261\206\311\200\221\013\244\205\203$-R \n\000\307\235\347\267k\000\000\000"
+        end_stream: false
+        stream_id: 1
+      }
+    }
+    frames {
+      data_frame {
+        pad_length: 118
+        data: ""
+        end_stream: true
+        stream_id: 1
+      }
+    }
+    frames {
+      ping_frame {
+        opaque_data_lo: 0
+        opaque_data_hi: 0
+        ack: false
+      }
+    }
+  }
+}

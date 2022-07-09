@@ -1,0 +1,68 @@
+exchanges {
+  request_sequence {
+    frames {
+      settings_frame {
+        header_table_size: 131071
+        enable_push: false
+        max_concurrent_streams: 1000
+        initial_window_size: 6291456
+        max_header_list_size: 262144
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 15663105
+      }
+    }
+    frames {
+      settings_frame {
+        enable_push: true
+        ack: false
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        header_table_size: 131071
+        enable_push: false
+        max_concurrent_streams: 1000
+        initial_window_size: 6291456
+        max_header_list_size: 262144
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 15663105
+      }
+    }
+    frames {
+    }
+    frames {
+      settings_frame {
+        enable_push: true
+        initial_window_size: 146
+        ack: true
+      }
+    }
+  }
+}
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+    frames {
+      continuation_frame {
+        end_headers: false
+        stream_id: 0
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+exchanges {
+  request_sequence {
+    frames {
+      priority_frame {
+        exclusive: false
+        stream_dependency: 838860800
+        weight: 0
+        stream_id: 0
+      }
+    }
+    frames {
+      settings_frame {
+        header_table_size: 65536
+        max_concurrent_streams: 1000
+        initial_window_size: 6291456
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 15663105
+      }
+    }
+    frames {
+      settings_frame {
+        header_table_size: 65536
+        max_concurrent_streams: 1000
+        initial_window_size: 6291456
+        max_header_list_size: 262144
+        ack: false
+      }
+    }
+    frames {
+      data_frame {
+        pad_length: 221
+        data: ""
+        end_stream: true
+        stream_id: 3
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        max_concurrent_streams: 100
+        max_header_list_size: 1000
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 16711681
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+  }
+}

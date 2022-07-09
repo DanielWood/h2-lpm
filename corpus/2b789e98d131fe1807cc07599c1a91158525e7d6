@@ -1,0 +1,276 @@
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+  }
+}
+exchanges {
+  request_sequence {
+    frames {
+      settings_frame {
+        max_concurrent_streams: 128
+        initial_window_size: 65536
+        max_frame_size: 16777215
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 2147418112
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+    frames {
+      headers_frame {
+        pad_length: 0
+        exclusive: false
+        stream_dependency: 0
+        weight: 0
+        header_list {
+          name {
+            data: ":status"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "304"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "date"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "Sat, 12 Mar 2022 01:04:25 GMT"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "server"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "BunnyCDN-AUC1-695"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "cdn-pullzone"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "99568"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "cdn-uid"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "50c043fb-dcd1-4574-9faf-b60384f66f78"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "cdn-requestcountrycode"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "NZ"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "cache-control"
+            force_literal: true
+            huffman: true
+          }
+          value {
+            data: "public, max-age=604800"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "last-modified"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "Fri, 06 Dec 2019 12:46:59 GMT"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "cdn-storageserver"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "DE-169"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "cdn-fileserver"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "55"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "cdn-proxyver"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "1.0"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "cdn-requestpullsuccess"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "True"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "cdn-requestpullcode"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "206"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "cdn-cachedat"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "09/05/2021 08:01:51"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "cdn-edgestorageid"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "695"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "cdn-status"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "304"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "cdn-requestid"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "1095f2ea4fcc81bd718c460d651f817e"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "cdn-cache"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "HIT"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        end_stream: true
+        end_headers: true
+        priority: false
+        stream_id: 1
+      }
+    }
+  }
+  response_sequence {
+  }
+}

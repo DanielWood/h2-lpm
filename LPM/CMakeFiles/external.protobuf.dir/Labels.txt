@@ -1,0 +1,13 @@
+# Target labels
+ external.protobuf
+# Source files and their labels
+/home/ufo/personal/research/fuzzing/nginx/LPM/CMakeFiles/external.protobuf
+/home/ufo/personal/research/fuzzing/nginx/LPM/CMakeFiles/external.protobuf.rule
+/home/ufo/personal/research/fuzzing/nginx/LPM/CMakeFiles/external.protobuf-complete.rule
+/home/ufo/personal/research/fuzzing/nginx/LPM/external.protobuf/src/external.protobuf-stamp/external.protobuf-build.rule
+/home/ufo/personal/research/fuzzing/nginx/LPM/external.protobuf/src/external.protobuf-stamp/external.protobuf-configure.rule
+/home/ufo/personal/research/fuzzing/nginx/LPM/external.protobuf/src/external.protobuf-stamp/external.protobuf-download.rule
+/home/ufo/personal/research/fuzzing/nginx/LPM/external.protobuf/src/external.protobuf-stamp/external.protobuf-install.rule
+/home/ufo/personal/research/fuzzing/nginx/LPM/external.protobuf/src/external.protobuf-stamp/external.protobuf-mkdir.rule
+/home/ufo/personal/research/fuzzing/nginx/LPM/external.protobuf/src/external.protobuf-stamp/external.protobuf-patch.rule
+/home/ufo/personal/research/fuzzing/nginx/LPM/external.protobuf/src/external.protobuf-stamp/external.protobuf-update.rule

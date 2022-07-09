@@ -1,0 +1,36 @@
+exchanges {
+  request_sequence {
+    frames {
+      continuation_frame {
+        header_list {
+          name {
+            data: "accept-language"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "en-US,en;q=0.9"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_headers: true
+        stream_id: 0
+      }
+    }
+  }
+  response_sequence {
+  }
+}
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+    frames {
+      window_update_frame {
+        window_size_increment: 0
+      }
+    }
+  }
+}

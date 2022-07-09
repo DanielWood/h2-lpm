@@ -1,0 +1,21 @@
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+    frames {
+      window_update_frame {
+        window_size_increment: 4294967288
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 4294967288
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 4294967288
+      }
+    }
+  }
+}

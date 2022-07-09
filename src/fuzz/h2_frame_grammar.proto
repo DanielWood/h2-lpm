@@ -1,0 +1,124 @@
+syntax = "proto2";
+
+package h2proto;
+
+message Frame {
+  oneof frame_oneof {
+    DataFrame data_frame = 1;
+    HeadersFrame headers_frame = 2;
+    PriorityFrame priority_frame = 3;
+    RstStreamFrame rst_stream_frame = 4;
+    SettingsFrame settings_frame = 5;
+    PushPromiseFrame push_promise_frame = 6;
+    PingFrame ping_frame = 7;
+    GoawayFrame goaway_frame = 8;
+    WindowUpdateFrame window_update_frame = 9;
+    ContinuationFrame continuation_frame = 10;
+  }
+}
+
+/* Frame Type 0: DATA */
+message DataFrame {
+  optional uint32 pad_length = 1;
+  required bytes data = 2;
+  required bool end_stream = 3;
+  required uint32 stream_id = 4;
+}
+
+/* Frame Type 1: HEADERS */
+message HPackInt {
+  required uint64 value = 1;
+  required uint32 prefix = 2;
+  required uint32 msb_mask = 3;
+}
+
+message HPackString {
+  required bytes data = 1;
+  required bool force_literal = 2;
+  required bool huffman = 3;
+}
+
+message HeaderField {
+  required HPackString name = 1;
+  required HPackString value = 2;
+
+  enum Indexing {
+    INCREMENTAL = 0;
+    WITHOUT_INDEX = 1;
+    NEVER_INDEXED = 2;
+  }
+  required Indexing indexing = 6;
+}
+
+message HeadersFrame {
+  optional uint32 pad_length = 1;
+  required bool exclusive = 2;
+  required uint32 stream_dependency = 3; // Changed to required but untested
+  required uint32 weight = 4;
+  repeated HeaderField header_list = 5;
+  required bool end_stream = 6;
+  required bool end_headers = 7;
+  required bool priority = 8;
+  required uint32 stream_id = 9;
+}
+
+/* Frame Type 2: PRIORITY */
+message PriorityFrame {
+  required bool exclusive = 1;
+  required uint32 stream_dependency = 2;
+  required uint32 weight = 3;
+  required uint32 stream_id = 4;
+}
+
+/* Frame Type 3: RST_STREAM */
+message RstStreamFrame {
+  required uint32 error_code = 1;
+  required uint32 stream_id = 2;
+}
+
+/* Frame Type 4: SETTINGS */
+message SettingsFrame {
+  optional uint32 header_table_size = 1;
+  optional bool enable_push = 2;
+  optional uint32 max_concurrent_streams = 3;
+  optional uint32 initial_window_size = 4;
+  optional uint32 max_frame_size = 5;
+  optional uint32 max_header_list_size = 6;
+  // TODO: oneof AckSettingsFrame or ParamSettingsFrame
+  required bool ack = 7;
+}
+
+/* Frame Type 5: PUSH_PROMISE */
+message PushPromiseFrame {
+  optional uint32 pad_length = 1;
+  required uint32 promised_stream_id = 2;
+  repeated HeaderField header_list = 3;
+  required bool end_headers = 4;
+  required uint32 stream_id = 5;
+}
+
+/* Frame Type 6: PING */
+message PingFrame {
+  required uint32 opaque_data_lo = 1;
+  required uint32 opaque_data_hi = 2;
+  required bool ack = 3;
+}
+
+/* Frame Type 7: GOAWAY */
+message GoawayFrame {
+  required uint32 last_stream_id = 1;
+  required uint32 error_code = 2;
+  optional bytes opaque_data = 3;
+}
+
+/* Frame Type 8: WINDOW_UPDATE */
+message WindowUpdateFrame {
+  required uint32 window_size_increment = 1;
+}
+
+/* Frame Type 9: CONTINUATION */
+message ContinuationFrame {
+  repeated HeaderField header_list = 1;
+  required bool end_headers = 2;
+  required uint32 stream_id = 3;
+}

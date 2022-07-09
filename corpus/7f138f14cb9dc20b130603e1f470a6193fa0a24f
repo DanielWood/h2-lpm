@@ -1,0 +1,154 @@
+exchanges {
+  request_sequence {
+    frames {
+      settings_frame {
+        header_table_size: 65536
+        max_concurrent_streams: 1000
+        initial_window_size: 6291456
+        max_header_list_size: 262144
+        ack: false
+      }
+    }
+    frames {
+      continuation_frame {
+        end_headers: false
+        stream_id: 0
+      }
+    }
+    frames {
+      continuation_frame {
+        end_headers: false
+        stream_id: 0
+      }
+    }
+    frames {
+      rst_stream_frame {
+        error_code: 8
+        stream_id: 1
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        max_concurrent_streams: 100
+        max_header_list_size: 131072
+        ack: true
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 983041
+      }
+    }
+    frames {
+      settings_frame {
+        header_table_size: 1000
+        ack: true
+      }
+    }
+    frames {
+      headers_frame {
+        pad_length: 0
+        exclusive: true
+        stream_dependency: 0
+        weight: 0
+        header_list {
+          name {
+            data: ":status"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "304"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "date"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "Sat, 12 Mar 2022 01:04:25 GMT"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "expires"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "vary"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "cache-control"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "public"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "vary"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "Accept-Encoding"
+            force_literal: true
+            huffman: true
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "server"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "ATS"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "ats-carp-promotion"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "1"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_stream: true
+        end_headers: true
+        priority: false
+        stream_id: 1
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+  }
+}
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+    frames {
+      data_frame {
+        data: ""
+        end_stream: false
+        stream_id: 0
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "h2_frame_grammar.proto";
+
+package h2proto;
+
+message Sequence {
+  repeated Frame frames = 1;
+}
+
+message Exchange {
+  required Sequence request_sequence = 1;
+  required Sequence response_sequence = 2;
+}
+
+message Conversation {
+  repeated Exchange exchanges = 1;
+}

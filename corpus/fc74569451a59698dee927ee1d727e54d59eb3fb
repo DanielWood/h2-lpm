@@ -1,0 +1,38 @@
+exchanges {
+  request_sequence {
+    frames {
+      settings_frame {
+        header_table_size: 65536
+        max_concurrent_streams: 1000
+        initial_window_size: 3840
+        max_header_list_size: 262144
+        ack: true
+      }
+    }
+    frames {
+      settings_frame {
+        max_concurrent_streams: 0
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 16580608
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      ping_frame {
+        opaque_data_lo: 0
+        opaque_data_hi: 0
+        ack: true
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 983041
+      }
+    }
+  }
+}

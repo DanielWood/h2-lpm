@@ -1,0 +1,39 @@
+exchanges {
+  request_sequence {
+    frames {
+      settings_frame {
+        initial_window_size: 3276800
+        max_frame_size: 0
+        ack: false
+      }
+    }
+  }
+  response_sequence {
+  }
+}
+exchanges {
+  request_sequence {
+    frames {
+      push_promise_frame {
+        promised_stream_id: 0
+        header_list {
+          name {
+            data: ""
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: ":scheme"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_headers: false
+        stream_id: 0
+      }
+    }
+  }
+  response_sequence {
+  }
+}

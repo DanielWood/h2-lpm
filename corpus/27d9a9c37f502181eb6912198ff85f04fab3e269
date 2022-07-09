@@ -1,0 +1,61 @@
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+    frames {
+      continuation_frame {
+        header_list {
+          name {
+            data: ""
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: ""
+            force_literal: false
+            huffman: false
+          }
+          indexing: NEVER_INDEXED
+        }
+        end_headers: false
+        stream_id: 0
+      }
+    }
+  }
+}
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+    frames {
+      goaway_frame {
+        last_stream_id: 0
+        error_code: 1
+      }
+    }
+  }
+}
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+    frames {
+      goaway_frame {
+        last_stream_id: 0
+        error_code: 1
+      }
+    }
+  }
+}
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+    frames {
+      rst_stream_frame {
+        error_code: 0
+        stream_id: 0
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+exchanges {
+  request_sequence {
+    frames {
+      settings_frame {
+        header_table_size: 65536
+        max_concurrent_streams: 1000
+        initial_window_size: 6291456
+        max_header_list_size: 262144
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 15663105
+      }
+    }
+    frames {
+      data_frame {
+        pad_length: 0
+        data: "ined || co.isGdpr == true) {\n      if (impliedConsent() == false) return; // exit immediately, consent cannot be determined\n    }\n  }\n\n  // if firing 3p and iabConsentString exists then pass it to pix for TTD cookie sync\n  if (window._rm_fire3p && co.iabConsentString != undefined) {\n     window._gdpr_consent = encodeURIComponent(co.iabConsentString);\n  }\n\n  _mf__tag.init();\n}\n\nif (!window._globalMids) { window._globalMids={}; }\nif (!window._globalMids.Js) { window._globalMids[\'Js\'] = {}; }\nwindow._globalMids.Js[8712] = 8712;\n\n"
+        end_stream: false
+        stream_id: 1
+      }
+    }
+    frames {
+      data_frame {
+        pad_length: 0
+        data: "ined || co.isGdpr == true) {\n      if (impliedConsent() == false) return; // exit immediately, consent cannot be determined\n    }\n  }\n\n  // if firing 3p and iabConsentString exists then pass it to pix for TTD cookie sync\n  if (window._rm_fire3p && co.iabConsentString != undefined) {\n     window._gdpr_consent = encodeURIComponent(co.iabConsentString);\n  }\n\n  _mf__tag.init();\n}\n\nif (!window._globalMids) { window._globalMids={}; }\nif (!window._globalMids.Js) { window._globalMids[\'Js\'] = {}; }\nwindow._globalMids.Js[8712] = 8712;\n\n"
+        end_stream: false
+        stream_id: 1
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        max_concurrent_streams: 256
+        initial_window_size: 65536
+        max_frame_size: 16777215
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 2147418112
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+  }
+}

@@ -1,0 +1,458 @@
+exchanges {
+  request_sequence {
+    frames {
+      settings_frame {
+        header_table_size: 65536
+        max_concurrent_streams: 1000
+        initial_window_size: 6291456
+        max_header_list_size: 262144
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 15663105
+      }
+    }
+    frames {
+      headers_frame {
+        pad_length: 0
+        exclusive: true
+        stream_dependency: 0
+        weight: 146
+        header_list {
+          name {
+            data: ":method"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "GET"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":authority"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "gtm.udemy.com"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":scheme"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "https"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":path"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "/gtag/js?id=G-7YMFEFLR6Q"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "sec-ch-ua"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\""
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-ch-ua-mobile"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "?0"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "user-agent"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-ch-ua-platform"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "\"Linux\""
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "accept"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "*/*"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-site"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "same-site"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-mode"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "no-cors"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-dest"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "script"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "referer"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "https://www.udemy.com/"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "accept-encoding"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "gzip, deflate, br"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "accept-language"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "en-US,en;q=0.9"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "__udmy_2_v57r=00efeb8f44754d76987a170a06a92afc"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "__ssid=beb904357a45ebc0bda2f3550125eca"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "_rdt_uuid=1637994188830.aca4d9c0-c700-45f5-81dc-22db975f3e9d"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "_fbp=fb.1.1637994188917.1561470407"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "__udmy_1_a12z_c24t=VGhlIGFuc3dlciB0byBsaWZlLCB0aGUgdW5pdmVyc2UsIGFuZCBldmVyeXRoaW5nIGlzIDQy"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "IR_PI=6859f864-a60d-3290-8e50-f30a3528e1a5%7C1639730858292"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "stc111655=env:1645079135%7C20220320062535%7C20220217065736%7C3%7C1014624:20230217062736|uid:1637994188934.1682954084.1833954.111655.1310633849:20230217062736|srchist:1014624%3A1645079135%3A20220320062535:20230217062736|tsa:1645079135213.458356456.0228982.6259162493316635.1:20220217065736"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "_ga=GA1.2.1934801722.1637994186"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "_ga_7YMFEFLR6Q=GS1.1.1645079135.9.1.1645079279.37"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "__udmy_4_a12z=fce2f4f7013f4eac86efa8007ca0e950d987e7157711ada0c6952fd37b0e8a4a"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "__cfruid=84c9f87e3d44797e0f2a749b846b64e66e9a6508-1647047060"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "__cf_bm=hIf9a1paz.CS59dKFZkeJ7bjADStWFc75CmAPfE7MxU-1647047061-0-ATXu+wxFPlFYGIq0dkQGlYdouOvH4IK6XIMgYlk4ayrcNzovQdexxSkjyiLtplMZSnCugGzq/IgA9XUDz5IBmfQmH69PpTSW4xR182OPGc74t61WVCFVxM9wvoJblW+ITrq38QOw7YBc4cUaPqGLGov8oY5mpr9H1al8W8p2IMCj"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "OptanonConsent=isIABGlobal=false&datestamp=Sat+Mar+12+2022+14%3A07%3A17+GMT%2B1300+(New+Zealand+Daylight+Time)&version=6.10.0&hosts=&consentId=9e06e304-729a-4015-bf14-a662ab3214c4&interactionCount=1&landingPath=NotLandingPage&groups=C0003%3A1%2CC0005%3A1%2CC0004%3A1%2CC0001%3A1%2CC0002%3A1&AwaitingReconsent=false"
+            force_literal: true
+            huffman: true
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "_gid=GA1.2.782392801.1647047238"
+            force_literal: true
+            huffman: true
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "_gat=1"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "eventing_session_id=JJORIlyeSxyqgDt7N6mDQQ-1647049039392"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_stream: true
+        end_headers: true
+        priority: true
+        stream_id: 1
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        max_concurrent_streams: 100
+        initial_window_size: 1048576
+        max_header_list_size: 68608
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 983041
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+  }
+}

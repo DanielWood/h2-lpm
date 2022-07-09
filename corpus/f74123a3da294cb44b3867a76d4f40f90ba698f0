@@ -1,0 +1,398 @@
+exchanges {
+  request_sequence {
+    frames {
+      settings_frame {
+        header_table_size: 65536
+        max_concurrent_streams: 1000
+        initial_window_size: 6291456
+        max_header_list_size: 262144
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 15663105
+      }
+    }
+    frames {
+      headers_frame {
+        pad_length: 0
+        exclusive: true
+        stream_dependency: 0
+        weight: 146
+        header_list {
+          name {
+            data: ":method"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "GET"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":authority"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "pi.ispot.tv"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":scheme"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "https"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":path"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "/v2/TC-3673-1.gif?redir=https%3A%2F%2Fs.amazon-adsystem.com%2Fecm3%3Fex%3Dispot.tv%26id%3D%7BISID%7D"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "sec-ch-ua"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\""
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-ch-ua-mobile"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "?0"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "user-agent"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-ch-ua-platform"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "\"Linux\""
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "accept"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-site"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "cross-site"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-mode"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "no-cors"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-dest"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "image"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "accept-encoding"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "gzip, deflate, br"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "accept-language"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "en-US,en;q=0.9"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "pt=v2:09a5dade88aedf1fabfba58cb83dce8ea1e4665ebcac908b124c00278895ac93|9a081584e531303850956a1516ec74161cff708df1f4acb90c45a53c9947b946"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_stream: true
+        end_headers: true
+        priority: true
+        stream_id: 1
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        max_concurrent_streams: 100
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 16711681
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+    frames {
+      headers_frame {
+        pad_length: 0
+        exclusive: false
+        stream_dependency: 0
+        weight: 0
+        header_list {
+          name {
+            data: ":status"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "302"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "retry-after"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "0"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "location"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "https://s.amazon-adsystem.com/ecm3?ex=ispot.tv&id=09a5dade88aedf1fabfba58cb83dce8ea1e4665ebcac908b124c00278895ac93"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "accept-ranges"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "bytes"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "date"
+            force_literal: false
+            huffman: true
+          }
+          value {
+            data: "Sat, 12 Mar 2022 01:04:26 GMT"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "set-cookie"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "pt=v2:09a5dade88aedf1fabfba58cb83dce8ea1e4665ebcac908b124c00278895ac93|9a081584e531303850956a1516ec74161cff708df1f4acb90c45a53c9947b946; Domain=ispot.tv; Path=/; Expires=Mon, 11 Mar 2024 01:04:26 GMT; SameSite=None; Secure"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "cache-control"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "no-cache, no-store, must-revalidate"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "expires"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "0"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "pragma"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "no-cache"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "content-length"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "0"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        end_stream: false
+        end_headers: true
+        priority: false
+        stream_id: 1
+      }
+    }
+    frames {
+      data_frame {
+        pad_length: 0
+        data: ""
+        end_stream: true
+        stream_id: 1
+      }
+    }
+  }
+}

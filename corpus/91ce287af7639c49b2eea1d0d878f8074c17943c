@@ -1,0 +1,173 @@
+exchanges {
+  request_sequence {
+    frames {
+      headers_frame {
+        pad_length: 0
+        exclusive: true
+        stream_dependency: 0
+        weight: 109
+        header_list {
+          name {
+            data: ":method"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "GET"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":authority"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "safebrowsing.googleapis.com"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":scheme"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "https"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: ":path"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "/v4/fullHashes:find?$req=ChwKDGdvb2dsZWNocm9tZRIMOTguMC40NzU4LjgwEhsKDQgHEAYYASIDMDAxMAEQz94KGgIYB6hHxFcSGwoNCAUQBhgBIgMwMDEwARCJvQ0aAhgHbuJF0RIbCg0IARAGGAEiAzAwMTABEMWoChoCGAf55w00EhkKDQgKEAgYASIDMDAxMAEQBxoCGAfL8t2CEhoKDQgBEAgYASIDMDAxMAQQuyYaAhgHHrfMABIaCg0IDxAGGAEiAzAwMTABEPZwGgIYB0ay1dESGgoNCAgQBhgBIgMwMDEwARDSDhoCGAfJBpkAEhsKDQgNEAYYASIDMDAxMAEQ_rABGgIYB0TeenYSGQoNCAkQBhgBIgMwMDEwARAgGgIYByEc83oSGwoNCAMQBhgBIgMwMDEwARD36AkaAhgHs_unexIbCg0IDhAGGAEiAzAwMTABEIajBhoCGAfENgdJEhkKDQgBEAYYASIDMDAxMAMQFBoCGAcxsclIEhoKDQgQEAYYASIDMDAxMAEQrBAaAhgHxZwIsxosCAEIAwgFCAYIBwgICAkICggNCA4IDwgQCBEQAhAIGgYKBJQt98wgASADIAQ=&$ct=application/x-protobuf&key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "x-http-method-override"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "POST"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-site"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "none"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-mode"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "no-cors"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "sec-fetch-dest"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "empty"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "user-agent"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "accept-encoding"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "gzip, deflate, br"
+            force_literal: false
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_stream: true
+        end_headers: true
+        priority: true
+        stream_id: 3
+      }
+    }
+  }
+  response_sequence {
+  }
+}
+exchanges {
+  request_sequence {
+    frames {
+      data_frame {
+        pad_length: 0
+        data: "\037\213\010\000\000\000\000\000\002\377\3432\344`\025`\222R\342R\230\242\373\375\214\233\335\277\347\023\034*\2313\325J\375X\215\347g\n{~\022\376;{m\217Tr \217\022\203\0263\307\032&\003F.\220\026\016\222\264H\201(\000%\201\243\352k\000\000\000"
+        end_stream: true
+        stream_id: 3
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+    frames {
+      continuation_frame {
+        end_headers: false
+        stream_id: 0
+      }
+    }
+  }
+}

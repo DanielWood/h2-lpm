@@ -1,0 +1,54 @@
+exchanges {
+  request_sequence {
+    frames {
+      priority_frame {
+        exclusive: true
+        stream_dependency: 2097152
+        weight: 15663105
+        stream_id: 0
+      }
+    }
+    frames {
+      push_promise_frame {
+        promised_stream_id: 0
+        header_list {
+          name {
+            data: ""
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: ""
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_headers: false
+        stream_id: 0
+      }
+    }
+    frames {
+      push_promise_frame {
+        promised_stream_id: 0
+        header_list {
+          name {
+            data: ""
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: ""
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_headers: false
+        stream_id: 0
+      }
+    }
+  }
+  response_sequence {
+  }
+}

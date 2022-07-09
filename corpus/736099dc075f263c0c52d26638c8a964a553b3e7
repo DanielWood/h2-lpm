@@ -1,0 +1,61 @@
+exchanges {
+  request_sequence {
+    frames {
+      settings_frame {
+        header_table_size: 65536
+        initial_window_size: 6291456
+        max_header_list_size: 262144
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 15663105
+      }
+    }
+    frames {
+      push_promise_frame {
+        pad_length: 262144
+        promised_stream_id: 0
+        header_list {
+          name {
+            data: "GET"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "www.imdb.com"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_headers: false
+        stream_id: 0
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        max_concurrent_streams: 100
+        initial_window_size: 1048576
+        max_header_list_size: 68608
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 983041
+      }
+    }
+    frames {
+      priority_frame {
+        exclusive: false
+        stream_dependency: 54016
+        weight: 0
+        stream_id: 0
+      }
+    }
+  }
+}

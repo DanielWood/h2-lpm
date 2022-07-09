@@ -1,0 +1,32 @@
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+    frames {
+      goaway_frame {
+        last_stream_id: 0
+        error_code: 1
+      }
+    }
+  }
+}
+exchanges {
+  request_sequence {
+    frames {
+      push_promise_frame {
+        pad_length: 0
+        promised_stream_id: 0
+        end_headers: true
+        stream_id: 0
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      goaway_frame {
+        last_stream_id: 0
+        error_code: 1
+      }
+    }
+  }
+}

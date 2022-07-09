@@ -1,0 +1,247 @@
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        max_concurrent_streams: 128
+        initial_window_size: 65536
+        max_frame_size: 16777215
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 2147418112
+      }
+    }
+    frames {
+      settings_frame {
+        ack: true
+      }
+    }
+    frames {
+      headers_frame {
+        pad_length: 0
+        exclusive: false
+        stream_dependency: 0
+        weight: 0
+        header_list {
+          name {
+            data: ":status"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "302"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "content-type"
+            force_literal: false
+            huffman: true
+          }
+          value {
+            data: "application/json"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "content-length"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "2"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "location"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "https://cnv.event.prod.bidr.io/log/cnv?tag_id=288&buzz_key=blisspoint&value=udemy&segment_key=&order=b4691413-1d3a-41fb-aaec-d3c910769f0d.00efeb8f44754d76987a170a06a92afc&ord=3828722752634344725"
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        header_list {
+          name {
+            data: "date"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "Sat, 12 Mar 2022 01:04:25 GMT"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "x-amzn-requestid"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "0e085b77-ecd5-4539-a9c7-ad23984da5c7"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "access-control-allow-origin"
+            force_literal: true
+            huffman: true
+          }
+          value {
+            data: "*"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "strict-transport-security"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "max-age=63072000; includeSubDomains; preload"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: ":path"
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "c=03677873-bd9b-4261-9176-e62170d280e8; domain=.pointmediatracker.com; expires=Sun, 12-Mar-2023 01:04:25 GMT; path=/; secure; SameSite=None"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "x-amz-apigw-id"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "O2KwAEBLvHcFiEw="
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "x-amzn-trace-id"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "Root=1-622bf199-39279b5b62d7114a47e5ed91;Sampled=0"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "x-cache"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "Miss from cloudfront"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "via"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "1.1 b3d6b614ba45dfb217beafb39afef764.cloudfront.net (CloudFront)"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "x-amz-cf-pop"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "AKL50-C1"
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: "x-amz-cf-id"
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: "nSgvTQ1WiSV8RcSMPQB7cDmIUvPianYH-FXBb9HxWvUKNmBlPCfIVQ=="
+            force_literal: true
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        end_stream: false
+        end_headers: true
+        priority: false
+        stream_id: 1
+      }
+    }
+    frames {
+      data_frame {
+        pad_length: 0
+        data: "{}"
+        end_stream: false
+        stream_id: 1
+      }
+    }
+    frames {
+      data_frame {
+        pad_length: 0
+        data: "{}"
+        end_stream: true
+        stream_id: 1
+      }
+    }
+  }
+}

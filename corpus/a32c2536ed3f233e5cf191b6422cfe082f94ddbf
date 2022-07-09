@@ -1,0 +1,50 @@
+exchanges {
+  request_sequence {
+    frames {
+      push_promise_frame {
+        promised_stream_id: 0
+        end_headers: false
+        stream_id: 1694498816
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 15663105
+      }
+    }
+    frames {
+    }
+    frames {
+      ping_frame {
+        opaque_data_lo: 0
+        opaque_data_hi: 0
+        ack: false
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        initial_window_size: 0
+        max_frame_size: 146
+        ack: true
+      }
+    }
+    frames {
+      priority_frame {
+        exclusive: false
+        stream_dependency: 0
+        weight: 0
+        stream_id: 0
+      }
+    }
+    frames {
+      priority_frame {
+        exclusive: false
+        stream_dependency: 0
+        weight: 0
+        stream_id: 0
+      }
+    }
+  }
+}

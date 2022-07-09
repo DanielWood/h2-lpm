@@ -1,0 +1,64 @@
+exchanges {
+  request_sequence {
+    frames {
+      settings_frame {
+        header_table_size: 65536
+        max_concurrent_streams: 1000
+        initial_window_size: 6291456
+        max_header_list_size: 262144
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 15663105
+      }
+    }
+    frames {
+      ping_frame {
+        opaque_data_lo: 0
+        opaque_data_hi: 0
+        ack: false
+      }
+    }
+    frames {
+      headers_frame {
+        exclusive: false
+        stream_dependency: 0
+        weight: 0
+        header_list {
+          name {
+            data: ""
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: ""
+            force_literal: false
+            huffman: true
+          }
+          indexing: INCREMENTAL
+        }
+        end_stream: false
+        end_headers: false
+        priority: false
+        stream_id: 0
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      settings_frame {
+        max_concurrent_streams: 0
+        initial_window_size: 1048576
+        max_header_list_size: 65536
+        ack: false
+      }
+    }
+    frames {
+      window_update_frame {
+        window_size_increment: 983041
+      }
+    }
+  }
+}

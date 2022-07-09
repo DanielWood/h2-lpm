@@ -1,0 +1,52 @@
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+    frames {
+      goaway_frame {
+        last_stream_id: 0
+        error_code: 1
+      }
+    }
+  }
+}
+exchanges {
+  request_sequence {
+    frames {
+      push_promise_frame {
+        pad_length: 0
+        promised_stream_id: 65280
+        header_list {
+          name {
+            data: ""
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: "\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377"
+            force_literal: false
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        header_list {
+          name {
+            data: ""
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: ""
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_headers: false
+        stream_id: 0
+      }
+    }
+  }
+  response_sequence {
+  }
+}

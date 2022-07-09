@@ -1,0 +1,54 @@
+exchanges {
+  request_sequence {
+    frames {
+      data_frame {
+        pad_length: 0
+        data: " = document.cookie.split(\';\');\nvar cookie_value = \"\";\nvar max_merchant_keep = 10;\nfor (var i = 0; i < ca.length; i++) {\n  var c = ca[i];\n  while (c.charAt(0) == \' \') c = c.substring(1, c.length);\n  if (c.indexOf(cookie_name) == 0) {\n    cookie_value = c.substring(cookie_name.length + 1);\n    break\n  }\n}\nreturn cookie_value;\n},\n  \"createCookie\": function(name, value, days) {\nif (days) {\n  var date = new Date();\n  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));\n  var expires = \"; expires=\" + date.toGMTString();\n}\nelse var expires = \"\";\ndocument.cookie = name + \"=\" + value + expires + \";path=/;domain=\" + document.domain + \";\";\n},\n  \"build_parameters\": function(query_string) {\n    var parameters = {};\n    parameters[\'pt\'] = \'\';\n    parameters[\'orderNumber\'] = \'\';\n    parameters[\'prodID\'] = \'\';\n    parameters[\'catID\'] = \'\';\n    parameters[\'cart\'] = \'\';\n    parameters[\'price\'] = \'\';\n    parameters[\'href\'] = \'\';\n    parameters[\'referrer\'] = \'\';\n    parameters[\'nan_type\'] = \'visit\';\n    parameters[\'nan_name\'] = \'landing\';\n    parameters[\'ts\'] = new Date().getTime();\n    parameters[\'uid3\'] = \"\";\n\n    if (query_string[0] === \"?\") query_string = query_string.substr(1);\n    var params = query_string.split(\'&\');\n    for (var param_index = 0; param_index < params.length; param_index++) {\n      var split_query = params[param_index].split(\'=\');\n      if (split_query.length == 2) {\n        var name = split_query[0];\n        var value = split_query[1];\n        parameters[name] = value;\n        if (name.indexOf(\'orderNumber\') != -1) {\n          parameters[\'nan_type\'] = \'purchase\';\n          parameters[\'nan_name\'] = \'main\';\n        }\n        if (name.indexOf(\'prodID\') != -1 || name.indexOf(\'catID\') != -1) {\n          parameters[\'nan_type\'] = \'user\';\n          parameters[\'nan_name\'] = \'product_view\';\n        }\n      }\n    }\n\n    this.parameters = parameters;\n  },\n  \"get_container\": function() {\n  var id = \'mf__div\';\n  var container = document.getElementById(id);\n  if (!container) container = this.create_element(document, [\'div\', \'id\', id]);\n  return container;\n}\n};\n\nfunction mf_fpidsCallback(ids) {\n\n}\n\nfunction timeout__mf() {\n\tvar t = _mf__tag.timeout;\n\tif(t) _mf__tag.inner_html(\'mf__div\', \'\');\n}\n\n\n// a utility function to retry condition evaluation using setTimeout\nfunction waitForReady(retry, fn, rdyfn) {\n\t\"use strict\";\n\tif (!rdyfn()) {\n\t\tif (retry < 1) {\n\t\t\tfn(false);\n\t\t} else {\n\t\t\twindow.setTimeout(function () {\n\t\t\t\twaitForReady(retry - 1, fn, rdyfn);\n\t\t\t}, 100);\n\t\t}\n\t} else {\n\t\tfn(true);\n\t}\n}\n\nif (window.DataLayer &&\n    window.DataLayer.consent &&\n    window.DataLayer.consent.gdpr) {\n  getConsentStatus(window.DataLayer.consent.gdpr);\n} else {\n  // the fallback code\n  var fallback = function () {\n    (function (cmpwUrl, callback, custIds) {\n      var gdprApplicable = function () { var a = [\"DE\", \"UK\", \"GB\", \"FR\", \"IT\", \"ES\", \"PL\", \"NL\", \"RO\", \"BE\", \"CZ\", \"SE\", \"HU\", \"EL\", \"GR\", \"PT\", \"AT\", \"OE\", \"DK\", \"FI\", \"SK\", \"IE\", \"BG\", \"HR\", \"LT\", \"LV\", \"SI\", \"EE\", \"CY\", \"LU\", \"MT\", \"150\", \"039\", \"151\", \"154\", \"155\"], n = [].concat(navigator.languages || []); n.push(navigator.userLanguage || navigator.language || \"\"); for (var r = null, l = 0; l < n.length; l++)for (var e = n[l].split(\"-\"), g = e.length > 6 ? 6 : e.length, t = 1; t < g; t++)if (r = !0, a.indexOf(e[t].toUpperCase()) > -1) return !0; return null == r && null },\n        wscr = document.createElement(\"script\"),\n        ip = document.getElementsByTagName(\"script\")[0],\n        ccb = { \"cb\": callback },\n        ready = function () {\n          // returns true when wrapper has been loaded\n          return window.___RMCMPW && typeof window.___RMCMPW === \"function\";\n        },\n        cont = function () {\n          // wrapper entry point, callback passed in arg\n          window.___RMCMPW(ccb);\n        },\n        rtry = 20,\n        cmpinit;\n      if (custIds) {\n        ccb.cids = custIds;\n      }\n      // the loop to test for wrapper ready\n      cmpinit = function () {\n        if (!ready()) {\n          if (rtry < 1) {\n            // retries exhausted, invoke callback with dummy consent object\n            ccb.cb({ \"status\": 3, \"isGdpr\": gdprApplicable() });\n          } else {\n            // not ready, try again in 100ms\n            rtry -= 1;\n            window.setTimeout(cmpinit, 100);\n          }\n        } else {\n          // ready - invoke wrapper\n          cont(ccb);\n        }\n      };\n      // load wrapper script\n      wscr.setAttribute(\"src\", cmpwUrl);\n      ip.parentNode.insertBefore(wscr, ip);\n\n      // initiate timeout loop\n      cmpinit();\n    }\n      (\"//intljs.rmtag.com/115557.ct.js\",\n      function (co) {\n        getConsentStatus(co);\n      }));\n  },\n    // \tthe continue process callback\n    callback = function () {\n      getConsentStatus(window.DataLayer.consent.gdpr);\n    };\n\n  // \tthe main block\n    waitForReady(20, // wait 2s for DataLayer consent object to be populated\n      function (rdy) {\n        if (rdy) {\n          callback();\n        } else {\n          fallback();\n        }\n      },\n      function () {\n        return window.DataLayer && window.DataLayer.consent && window.DataLayer.consent.gdpr;\n      });\n}\nfunction impliedConsent() {\n  return true;\n}\n\nfunction getConsentStatus(co) {\n  window._rm_fire3p = true;\n\n  // Check Consent Object Values\n  if (co.productConsents != undefined && co.productConsents.dspTrk != undefined && co.productConsents.rtbRet != undefined) {\n    if (co.productConsents.dspTrk == false && co.productConsents.rtbRet == false) return; // exit immediately, no consent provided\n    if (co.productConsents.dspTrk == true && co.productConsents.rtbRet == false) window._rm_fire3p = false; // tracking consent only\n  } else { // Check Browser Language\n    if (co.isGdpr == undef"
+        end_stream: false
+        stream_id: 1
+      }
+    }
+    frames {
+      push_promise_frame {
+        promised_stream_id: 0
+        header_list {
+          name {
+            data: ""
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: ""
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_headers: false
+        stream_id: 0
+      }
+    }
+    frames {
+      push_promise_frame {
+        promised_stream_id: 0
+        header_list {
+          name {
+            data: ""
+            force_literal: false
+            huffman: false
+          }
+          value {
+            data: ""
+            force_literal: true
+            huffman: false
+          }
+          indexing: INCREMENTAL
+        }
+        end_headers: false
+        stream_id: 0
+      }
+    }
+  }
+  response_sequence {
+  }
+}

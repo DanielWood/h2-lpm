@@ -1,0 +1,124 @@
+exchanges {
+  request_sequence {
+    frames {
+      continuation_frame {
+        header_list {
+          name {
+            data: ""
+            force_literal: true
+            huffman: false
+          }
+          value {
+            data: ""
+            force_literal: false
+            huffman: false
+          }
+          indexing: WITHOUT_INDEX
+        }
+        end_headers: false
+        stream_id: 0
+      }
+    }
+    frames {
+      data_frame {
+        pad_length: 65536
+        data: ""
+        end_stream: false
+        stream_id: 0
+      }
+    }
+    frames {
+      data_frame {
+        pad_length: 65536
+        data: ""
+        end_stream: false
+        stream_id: 0
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      headers_frame {
+        exclusive: false
+        stream_dependency: 0
+        weight: 0
+        end_stream: false
+        end_headers: false
+        priority: true
+        stream_id: 0
+      }
+    }
+    frames {
+      data_frame {
+        pad_length: 65536
+        data: ""
+        end_stream: false
+        stream_id: 0
+      }
+    }
+    frames {
+      headers_frame {
+        exclusive: false
+        stream_dependency: 0
+        weight: 0
+        end_stream: false
+        end_headers: false
+        priority: true
+        stream_id: 0
+      }
+    }
+  }
+}
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+  }
+}
+exchanges {
+  request_sequence {
+    frames {
+      continuation_frame {
+        end_headers: false
+        stream_id: 0
+      }
+    }
+    frames {
+      data_frame {
+        pad_length: 65536
+        data: ""
+        end_stream: false
+        stream_id: 0
+      }
+    }
+    frames {
+      data_frame {
+        pad_length: 65536
+        data: ""
+        end_stream: false
+        stream_id: 0
+      }
+    }
+  }
+  response_sequence {
+    frames {
+      headers_frame {
+        exclusive: false
+        stream_dependency: 0
+        weight: 0
+        end_stream: false
+        end_headers: false
+        priority: true
+        stream_id: 0
+      }
+    }
+    frames {
+      data_frame {
+        pad_length: 65536
+        data: ""
+        end_stream: false
+        stream_id: 0
+      }
+    }
+  }
+}

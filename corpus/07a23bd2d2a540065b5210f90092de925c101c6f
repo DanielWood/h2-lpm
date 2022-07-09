@@ -1,0 +1,38 @@
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+    frames {
+      goaway_frame {
+        last_stream_id: 0
+        error_code: 1
+        opaque_data: "same-site"
+      }
+    }
+  }
+}
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+    frames {
+      goaway_frame {
+        last_stream_id: 0
+        error_code: 1
+      }
+    }
+  }
+}
+exchanges {
+  request_sequence {
+  }
+  response_sequence {
+    frames {
+      goaway_frame {
+        last_stream_id: 0
+        error_code: 4211015680
+        opaque_data: "rmuid=d3e6faf7-da38-4fdf-a753-c37f447e07ca"
+      }
+    }
+  }
+}

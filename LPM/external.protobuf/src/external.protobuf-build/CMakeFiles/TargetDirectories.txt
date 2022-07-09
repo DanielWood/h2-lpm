@@ -1,0 +1,10 @@
+/home/ufo/personal/research/fuzzing/nginx/LPM/external.protobuf/src/external.protobuf-build/CMakeFiles/libprotobuf-lite.dir
+/home/ufo/personal/research/fuzzing/nginx/LPM/external.protobuf/src/external.protobuf-build/CMakeFiles/libprotobuf.dir
+/home/ufo/personal/research/fuzzing/nginx/LPM/external.protobuf/src/external.protobuf-build/CMakeFiles/libprotoc.dir
+/home/ufo/personal/research/fuzzing/nginx/LPM/external.protobuf/src/external.protobuf-build/CMakeFiles/protoc.dir
+/home/ufo/personal/research/fuzzing/nginx/LPM/external.protobuf/src/external.protobuf-build/CMakeFiles/edit_cache.dir
+/home/ufo/personal/research/fuzzing/nginx/LPM/external.protobuf/src/external.protobuf-build/CMakeFiles/rebuild_cache.dir
+/home/ufo/personal/research/fuzzing/nginx/LPM/external.protobuf/src/external.protobuf-build/CMakeFiles/list_install_components.dir
+/home/ufo/personal/research/fuzzing/nginx/LPM/external.protobuf/src/external.protobuf-build/CMakeFiles/install.dir
+/home/ufo/personal/research/fuzzing/nginx/LPM/external.protobuf/src/external.protobuf-build/CMakeFiles/install/local.dir
+/home/ufo/personal/research/fuzzing/nginx/LPM/external.protobuf/src/external.protobuf-build/CMakeFiles/install/strip.dir

@@ -1,0 +1,13 @@
+exchanges {
+  request_sequence {
+    frames {
+      settings_frame {
+        initial_window_size: 3276800
+        max_frame_size: 0
+        ack: false
+      }
+    }
+  }
+  response_sequence {
+  }
+}

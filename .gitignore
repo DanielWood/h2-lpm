@@ -1,0 +1,5 @@
+src/fuzz/wireshark/seed_corpus
+src/fuzz/wireshark/*.json
+**/*.gcda
+**/*.gcno
+objs/
