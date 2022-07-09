@@ -5,6 +5,7 @@ struct HuffmanCode
 };
 
 /* RFC 7541 Appendix B */
+/* TODO: This could just be an array */
 std::map<uint8_t, HuffmanCode> huffman_table = {
    { 0, { 0x1ff8, 13 } },
    { 1, { 0x7fffd8, 23 } },
