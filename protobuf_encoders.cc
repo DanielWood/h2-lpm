@@ -76,7 +76,6 @@ DECLARE_ENCODE_FUNCTION(h2proto::HPackString, str)
 
     std::string buf;
 
-
     // With Huffman coding
     if (str.huffman()) {
         int octet_offset = 0;
